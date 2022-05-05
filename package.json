@@ -4,6 +4,7 @@
   "description": "Super Backend Server with JS - Recharged",
   "main": "index.js",
   "scripts": {
+    "format": "prettier --write \"src/**/*.js\"",
     "start:dev": "nodemon --exec babel-node src/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,6 +16,20 @@
     "@babel/core": "^7.17.10",
     "@babel/node": "^7.17.10",
     "@babel/preset-env": "^7.17.10",
-    "nodemon": "^2.0.16"
-  }
+    "eslint": "^8.14.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "nodemon": "^2.0.16",
+    "prettier-eslint": "^14.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ialopezg/backendjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ialopezg/backendjs/issues"
+  },
+  "homepage": "https://github.com/ialopezg/backendjs#readme"
 }

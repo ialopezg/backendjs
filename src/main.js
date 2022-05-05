@@ -6,7 +6,6 @@ const reader = readline.createInterface({
   output: process.stdout,
 });
 
-const name = reader.question('What is your name?: ', (name) => {
-    greeting(name);
+reader.question('What is your name?: ', (name) => {
+  greeting(name);
 });
-
