@@ -1,15 +1,20 @@
 {
   "name": "backend",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Super Backend Server with JS - Recharged",
   "main": "index.js",
   "scripts": {
-    "start:dev": "node src/main.js",
+    "start:dev": "nodemon --exec babel-node src/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Isidro A. Lopez G. <me@ialopezg.com> (https://ialopezg.com)",
   "license": "MIT",
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "@babel/core": "^7.17.10",
+    "@babel/node": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "nodemon": "^2.0.16"
+  }
 }
