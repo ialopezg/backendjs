@@ -1,7 +1,7 @@
 {
   "name": "backend",
   "version": "1.0.1",
-  "description": "Super Backend Server with JS - Recharged",
+  "description": "A Light Weight, Robust & Faster JavaScript Backend Server",
   "main": "index.js",
   "scripts": {
     "format": "prettier --write \"src/**/*.js\"",
@@ -21,6 +21,8 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-n": "^15.2.0",
     "eslint-plugin-promise": "^6.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.4.1",
     "nodemon": "^2.0.16",
     "prettier-eslint": "^14.0.2"
   },
@@ -31,5 +33,16 @@
   "bugs": {
     "url": "https://github.com/ialopezg/backendjs/issues"
   },
-  "homepage": "https://github.com/ialopezg/backendjs#readme"
+  "homepage": "https://github.com/ialopezg/backendjs#readme",
+  "lint-staged": {
+    "*.js": [
+      "npm run format",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
 }
