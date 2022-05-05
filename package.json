@@ -1,0 +1,15 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "node src/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Isidro A. Lopez G. <me@ialopezg.com> (https://ialopezg.com)",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
